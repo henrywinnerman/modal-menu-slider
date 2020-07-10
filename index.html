@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Landing Page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user" />
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+
+      <h1>Welcome to my world!</h1>
+
+      <p>
+        I am Henry, a web developer with knowledge of HTML, CSS, Bootstrap, JavaScript, PHP, Laravel, MySQLi
+      </p>
+
+      <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+
+    <div class="container">
+      <h2>What is this landing page about?</h2>
+      <p>
+        I left teaching for web development this year, precisely January, 2020. It wasn't an easy decision I must say, but i had to leave as i was looking forward to a tech job i could build career on, and since i already have an unsatisfied thirst to learn web Development, I just switched to the Tech world of Web Development, learning and gaining insights.
+      </p>
+      <p>
+        A friend Seun Oyebode introduced me to Frontemd Masters Bootcamp, where i learnt the basics of HTML, CSS and JavaScript, He sent some Youtube tutorials too, I also picked interest in Dev Ed, the JavaScript Tutor on Youtube.
+      </p>
+
+      <h2>Tell Me More</h2>
+
+      <p>
+        With my little knowledge, i was able to create this page that has a modal menu slider with HTML, CSS and JavaScript, though i have also gained knowledge in PHP, Laravel, MySQLi, (Backend languages), I iitially found CSS a bit hard, i learnt and also discovered a framework, BootStrap! I love Bootstrap!
+      </p>
+
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>BootStrap</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>Laravel</li>
+        <li>MySQLi</li>
+        <li>GitHub</li>
+      </ul>
+
+      <p>
+        Meanwhile, seeing that i learnt these, this year, i am sure i will be able to pick up on any framework of these languages or learn a new language as requested by the company on the go. <br> You can check out my projects on my GitHub profile, <a href="https://github.com/henrywinnerman">Henry's Profile</a> </p> 
+      
+      <p>Remember, this is just a landing page to test my skills on menu slider, if you click the sign up button, a login form will slide up, its just me testing my skills.</p>
+      </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Register here</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password2">Confirm Password</label>
+              <input
+                type="password"
+                id="password2"
+                placeholder="Confirm Password"
+                class="form-input"
+              />
+            </div>
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
